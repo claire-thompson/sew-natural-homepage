@@ -98,7 +98,7 @@ textarea {
    }
 
    img {
-     width: 100%;
+     width: 70%;
    }
 
    p {
@@ -149,12 +149,33 @@ textarea {
      width: 60%;
    }
 
+   #logo img {
+     width: 100%;
+   }
+
    #menu-button {
      width: 10%;
    }
 
    nav {
-     display: none;
+    background-color: rgb(153, 51, 153);
+    width: 100%;
+    justify-content: center;
+    margin: 15px 0 0 0;
+   }
+
+   nav ul {
+     list-style-type: none;
+     padding: 0;
+   }
+
+   nav ul li {
+     padding: 10px 0;
+     text-transform: uppercase;
+   }
+
+   nav ul li a {
+     color: #fff;
    }
 
    /* Welcome Section */
@@ -329,6 +350,10 @@ textarea {
     font-size: 2em;
    }
 
+   footer i :hover {
+     text-decoration: underline;
+   }
+
    .social, .return {
      width: 10%;
    }
@@ -352,7 +377,7 @@ textarea {
 
    .attribution {
      font-size: 0.625em;
-     padding: 0 0 15px 0;
+     padding: 0 0 10px 0;
    }
 
 /* ==========================================================================
