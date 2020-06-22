@@ -87,6 +87,200 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+   /***** Universal Styles *****/
+
+   body {
+     font-family: 'Montserrat', Arial, sans-serif;
+     font-size: 16px;
+     width: 100%;
+     text-align: center;
+     color: #707070;
+   }
+
+   img {
+     width: 100%;
+   }
+
+   p {
+     margin: 0;
+   }
+
+   a {
+     text-decoration: none;
+   }
+
+   h2 {
+    font-weight: normal;
+    font-size: 1.25em;
+   }
+
+   header, main, footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+   /***** Mobile Styles *****/
+
+   .content-wrapper {
+     display: flex;
+     flex-direction: column;
+     width: 90%;
+     align-items: center;
+     justify-content: center;
+   }
+
+   /* Header */
+
+   header .content-wrapper {
+     flex-direction: row;
+     justify-content: space-between;
+     margin: 15px 0 0 0;
+   }
+
+   #logo {
+     width: 60%;
+   }
+
+   #menu-button {
+     width: 10%;
+   }
+
+   nav {
+     display: none;
+   }
+
+   /* Welcome Section */
+
+   #welcome {
+     margin: 30px 0;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+   }
+
+   #welcome img {
+    margin: 5px 0 20px 0;
+    width: 75%;
+   }
+
+   #welcome h1 {
+     font-size: 1.25em;
+     margin: 0;
+     font-weight: normal;
+   }
+
+   #covid-alert {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     border: #FF3333 solid 3px;
+     border-radius: 30px;
+     text-align: left;
+   }
+
+   #alert {
+     margin: 15px;
+     padding: 0px 20px;
+     border: #FF3333 solid 3px;
+     border-radius: 100%;
+     font-size: 2.1875em;
+     color: #FF3333;
+   }
+
+   #covid-alert span {
+     text-transform: uppercase;
+     color: #FF3333;
+     font-weight: bold;
+   }
+
+   #message {
+     margin: 15px;
+   }
+
+   /* Info Section */
+
+   #info {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     padding: 30px 0;
+     background-color: #993399;
+     color: #fff;
+   }
+
+   #info article {
+     margin: 20px 0;
+   }
+
+   #info a {
+     color: #fff;
+   }
+
+   #info a :hover {
+    text-decoration: underline;
+  }
+
+   .mailing-list {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+   }
+
+   .mailing-list h2 {
+     margin: 0 0 20px 0;
+   }
+
+   .mailing-list input {
+     margin: 10px 0;
+     width: 200px;
+     border: none;
+     padding: 0;
+     height: 40px;
+   }
+
+   ::placeholder {
+     font-size: 0.75em;
+     padding: 0 10px;
+   }
+
+    #button {
+    padding: 10px 0;
+    margin: 20px 0 10px 0;
+    background-color: #fff;
+    color: #993399;
+    font-size: 1.25em;
+    text-transform: uppercase;
+   }
+
+   #button:hover {
+     background-color: #707070;
+     color: #fff;
+   }
+
+   .mailing-list a {
+     font-style: italic;
+     margin: 20px 0;
+   }
+
+   .second-saturday img {
+     width: 60%;
+   }
+
+   .second-saturday h2 {
+     margin: 20px 0;
+   }
+
+   .shoppers-club img {
+     width: 50%;
+     margin: 10px 0 20px 0;
+   }
+
+   .shoppers-club h2 {
+     margin: 0 0 5px 0;
+   }
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */

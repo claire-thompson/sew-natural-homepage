@@ -18,6 +18,9 @@
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet">
+
 
   <meta name="theme-color" content="#fafafa">
 </head>
@@ -31,61 +34,64 @@
       <div id='logo'>
         <a href='index.html'><img src='img/sn-logo.jpeg' alt='Sew Natural Logo'></a>
       </div>
-      <div id='nav'>
-        <img src='img/menu.png' alt='Menu button'>
-        <nav>
-          <ul>
-            <li><a href='index.html'>Home</a></li>
-            <li><a href='https://store.sewnatural.net/stores_app/browse_dept_items.asp?Store_id=269&page_id=17'>Shop</a>
-            </li>
-            <li><a href='https://www.youtube.com/channel/UC_MLbqRa1WtJm7L4F3jCKxg'>Learn</a></li>
-            <li><a href='https://sewnatural.net/about_us.htm'>About</a></li>
-            <li><a href='https://sewnatural.net/newsletter.htm'>News</a></li>
-            <li><a href='https://sewnatural.net/contact.htm'>Contact</a></li>
-          </ul>
-        </nav>
-      </div>
+      <img src='img/menu.png' alt='Menu button' id='menu-button'>
+      <nav>
+        <ul>
+          <li><a href='index.html'>Home</a></li>
+          <li><a href='https://store.sewnatural.net/stores_app/browse_dept_items.asp?Store_id=269&page_id=17'>Shop</a>
+          </li>
+          <li><a href='https://www.youtube.com/channel/UC_MLbqRa1WtJm7L4F3jCKxg'>Learn</a></li>
+          <li><a href='https://sewnatural.net/about_us.htm'>About</a></li>
+          <li><a href='https://sewnatural.net/newsletter.htm'>News</a></li>
+          <li><a href='https://sewnatural.net/contact.htm'>Contact</a></li>
+        </ul>
+      </nav>
     </div>
   </header>
 
   <main>
-    <div class='content-wrapper'>
-      <section id='welcome'>
-        <p>Unique Fabric & Quilt Shop in Historic Downtown Newton, KS</p>
+    <section id='welcome'>
+      <div class='content-wrapper'>
+        <h1>Unique Fabric & Quilt Shop in Historic Downtown Newton, KS</h1>
         <a
           href='https://store.sewnatural.net/stores_app/Browse_dept_items.asp?Store_id=269&Page_id=17&categ_id=2349&parent_ids=0'><img
             src='img/banner.jpg' alt='Celebrating 35 Years'></a>
         <article id='covid-alert'>
           <p id='alert'>!</p>
-          <p>We are currently offering <span>delivery</span> and <span>pick-up by appointment</span> only until further
+          <p id='message'>We are currently offering <span>delivery</span> and <span>pick-up by appointment</span> only
+            until further
             notice</p>
         </article>
-      </section>
-      <section id='info'>
-        <article id='mailing-list'>
-          <p>Join our mailing list</p>
+      </div>
+    </section>
+    <section id='info'>
+      <div class='content-wrapper'>
+        <article class='mailing-list'>
+          <h2>Join our mailing list</h2>
           <input name="Name" placeholder='name' maxlength="100" type="text">
           <input name="Email" placeholder="email address" maxlength="255" type="text">
-          <input value="Subscribe" name="Subscribe" type="submit">
+          <input value="Subscribe" name="Subscribe" type="submit" id='button'>
           <a href='https://sewnatural.net/Sew_Natural_NL_June_18_2020.html'>
             <p>Read the latest newsletter now!</p>
           </a>
         </article>
-        <article id='block-of-the-month'>
+        <article class='second-saturday'>
           <a href='https://www.sewnatural.net/second_saturday.htm'>
             <img src='img/botm.png' alt='Block of the Month - Filmore Quilt'>
-            <p>2020 Second Saturday<br>Block of the Month Club</p>
+            <h2>2020 Second Saturday<br>Block of the Month Club</h2>
           </a>
         </article>
-        <article id='shoppers-club'>
+        <article class='shoppers-club'>
           <a href='https://www.sewnatural.net/nli.asp?iid=49688'>
-            <p>Shopper's Club</p>
             <img src='img/discount.png' alt="Shopper's Club icon">
+            <h2>Shopper's Club</h2>
             <p>Save 20% online and in-store</p>
           </a>
         </article>
-      </section>
-      <section id='shop'>
+      </div>
+    </section>
+    <section id='shop'>
+      <div class='content-wrapper'>
         <article>
           <a href='https://www.sewnatural.net/nl.asp?p=0&c=1'>
             <img src='img/sale-items.jpg' alt='Thread spools'>
@@ -104,8 +110,8 @@
             <p>Gift Certificates</p>
           </a>
         </article>
-      </section>
-    </div>
+      </div>
+    </section>
   </main>
 
   <footer>
