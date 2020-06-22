@@ -154,7 +154,8 @@ textarea {
    }
 
    #menu-button {
-     width: 10%;
+    color: #993399;
+    font-size: 2em;
    }
 
    nav {
