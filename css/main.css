@@ -591,6 +591,48 @@ textarea {
 
 }
 
+/***** Deaktop Styles ****/
+
+@media only screen and (min-width: 1024px) {
+
+  /* Info Section */
+
+  .info img {
+    width: 70%;
+  }
+
+  .second-saturday h2 {
+    margin: 15px 0 0 0;
+  }
+
+  .shoppers-club img {
+    margin: 0 0 10px 0;
+  }
+
+  /* Shop Section */
+
+  .shop article {
+    margin: 0;
+  }
+
+  .shop h3 {
+    margin: 20px 0 0 0;
+  }
+
+  /* Footer */
+
+  .footer-content {
+    padding: 20px 0;
+  }
+
+  .contact {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 50%;
+  }
+
+}
+
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
   (min-resolution: 1.25dppx),
