@@ -203,6 +203,10 @@ textarea {
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
    }
 
+   .dropdown-content:hover {
+     text-decoration: none;
+   }
+
    .dropdown-content a {
     color: #fff;
     font-weight: normal;
