@@ -362,8 +362,12 @@ textarea {
     font-size: 2em;
    }
 
-   footer i :hover {
-     text-decoration: underline;
+   footer a {
+     color: #fff;
+   }
+
+   footer address :hover {
+    text-decoration: underline;
    }
 
    .social, .return {
