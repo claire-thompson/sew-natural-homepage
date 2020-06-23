@@ -109,6 +109,10 @@ textarea {
      text-decoration: none;
    }
 
+   a :hover {
+    text-decoration: underline;
+  }
+
    h2 {
     font-weight: normal;
     font-size: 1.25em;
@@ -145,11 +149,11 @@ textarea {
      margin: 15px 0 0 0;
    }
 
-   #logo {
+   .logo {
      width: 60%;
    }
 
-   #logo img {
+   .logo img {
      width: 100%;
    }
 
@@ -172,6 +176,10 @@ textarea {
      padding: 0;
    }
 
+   nav ul :hover {
+     text-decoration: underline;
+   }
+
    nav ul li {
      padding: 10px 0;
      text-transform: uppercase;
@@ -183,25 +191,25 @@ textarea {
 
    /* Welcome Section */
 
-   #welcome {
+   .welcome {
      margin: 30px 0;
      display: flex;
      flex-direction: column;
      align-items: center;
    }
 
-   #welcome img {
+   .welcome img {
     margin: 5px 0 20px 0;
     width: 75%;
    }
 
-   #welcome h1 {
+   .welcome h1 {
      font-size: 1.25em;
      margin: 0;
      font-weight: normal;
    }
 
-   #covid-alert {
+   .covid-alert {
      display: flex;
      justify-content: center;
      align-items: center;
@@ -210,7 +218,7 @@ textarea {
      text-align: left;
    }
 
-   #alert {
+   .alert {
      margin: 15px;
      padding: 0px 20px;
      border: #FF3333 solid 3px;
@@ -219,36 +227,37 @@ textarea {
      color: #FF3333;
    }
 
-   #covid-alert span {
+   .covid-alert span {
      text-transform: uppercase;
      color: #FF3333;
      font-weight: bold;
    }
 
-   #message {
+   .message {
      margin: 15px;
    }
 
    /* Info Section */
 
-   #info {
+   .info {
      display: flex;
      flex-direction: column;
      align-items: center;
+     width: 100%;
      padding: 30px 0;
      background-color: #993399;
      color: #fff;
    }
 
-   #info article {
+   .info article {
      margin: 20px 0;
    }
 
-   #info a {
+   .info a {
      color: #fff;
    }
 
-   #info a :hover {
+   .info a :hover {
     text-decoration: underline;
   }
 
@@ -313,18 +322,18 @@ textarea {
 
    /* Shop Section */
 
-   #shop {
+   .shop {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 25px 0;
    }
 
-   #shop article {
+   .shop article {
      margin: 25px 0;
    }
 
-   #shop span {
+   .shop span {
     text-transform: uppercase;
    }
 
@@ -471,8 +480,115 @@ textarea {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+/***** Tablet Styles *****/
+
+@media only screen and (min-width: 768px) {
+
+  /* Universal */
+  
+  .welcome, .info, .shop, .social, .content-wrapper {
+    flex-direction: row;
+    justify-content: center;
+  } 
+
+  .content-wrapper {
+    justify-content: space-between;
+  }
+
+  h2 {
+    font-size: 1em;
+  }
+
+  article {
+    width: 30%;
+  }
+
+  /* Header */
+
+  header {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+  }
+
+  header .content-wrapper {
+    width: 30%;
+  }
+
+  .logo {
+    width: 100%;
+  }
+
+  #menu-button {
+    display: none;
+  }
+
+  nav {
+    height: unset;
+    background-color: #fff;
+    margin: 0;
+    width: 55%;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+  }
+
+  nav ul li a {
+    color: #993399;
+    font-weight: bold;
+  }
+
+  /* Welcome Section */
+
+  .description {
+    width: 35%;
+  }
+  
+  .covid-alert {
+    width: 60%;
+  }
+
+  /* Info Section */
+
+  .info .content-wrapper {
+    align-items: flex-start;
+  }
+
+  .mailing-list p {
+    font-size: 0.75em;
+  }
+
+  .second-saturday img {
+    width: 90%;
+  }
+
+  .second-saturday h2 {
+    margin: 43px 0 0 0;
+  }
+
+  .shoppers-club img {
+    width: 85%;
+    margin: 0 0 30px 0;
+  }
+
+  /* Footer */
+
+  footer .content-wrapper {
+    flex-direction: column;
+  }
+
+  .social {
+    justify-content: space-between;
+    width: 12%;
+  }
+
+  .return {
+    align-self: center;
+  }
+
 }
 
 @media print,
