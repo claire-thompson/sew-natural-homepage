@@ -165,15 +165,20 @@ textarea {
    nav {
     background-color: rgb(153, 51, 153);
     width: 100%;
-    justify-content: center;
-    margin: 15px 0 0 0;
+    margin: 0;
     height: 0px;
-    transition: all 0.3s ease-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
    }
 
-   nav ul {
+   #nav-items {
      list-style-type: none;
      padding: 0;
+     height: 0;
+     margin: 0;
+     display: flex;
+     flex-direction: column;
    }
 
    nav ul :hover {
@@ -567,9 +572,9 @@ textarea {
     width: 55%;
   }
 
-  nav ul {
-    display: flex;
+  #nav-items {
     justify-content: space-between;
+    flex-direction: row;
     margin: 0;
   }
 
@@ -631,6 +636,12 @@ textarea {
 /***** Deaktop Styles ****/
 
 @media only screen and (min-width: 1024px) {
+
+  /* Header */
+
+  #nav-items {
+    height: unset;
+  }
 
   /* Info Section */
 
